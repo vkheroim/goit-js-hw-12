@@ -2,26 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Search App</title>
+    <title>Image search</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <div class="form-wrap container">
-      <form class="search-form">
+    <form class="form">
+      <div class="form-wrap">
         <input
-          type="text"
-          name="searchRequest"
+          type="search"
+          name="search"
           placeholder="Search images..."
           autofocus
         />
-        <button type="search" class="searchBtn">Search</button>
-      </form>
-    </div>
-    <div class="loader" id="loader"></div>
-    <div class="gallery container">
-      <ul class="gallery-list"></ul>
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    <ul class="gallery"></ul>
+    <div class="loader"></div>
+    <div>
+      <button type="button" class="btn" data-action="load-more">
+        <span class="label">Load more</span>
+      </button>
     </div>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
+    <script type="module" src="./js/render-functions.js"></script>
   </body>
 </html>
