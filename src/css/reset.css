@@ -5,8 +5,11 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
   margin: 0;
+  list-style: none;
 }
 
 p:last-child {
@@ -14,9 +17,7 @@ p:last-child {
 }
 
 ul {
-  margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 a {
@@ -30,6 +31,14 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 360px;
+  height: 200px;
   height: auto;
+  list-style: none;
+}
+
+input {
+  outline: 0;
+  margin: 0;
+  padding: 0;
 }
